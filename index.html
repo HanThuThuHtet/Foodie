@@ -9,8 +9,8 @@
 <body>
   <header>
     <!-- Start Nav  -->
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pt-3 site-navbar">
+    <div class="">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pt-3  site-navbar">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./public/img/icon.png" class="brand-icon" alt="">
@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav nav-pills ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
@@ -45,28 +45,53 @@
     </div>
     <!-- End Nav -->
     <!-- Start Hero -->
-    <section>
+    <section id="home">
       <div class="container">
         <div class="row justify-content-evenly align-items-center min-vh-100">
           <div class="col-12 col-md-6 col-lg-5">
-            <h1 class="text-primary display-4 fw-bold mb-4">Tasty Food.....</h1>
-            <p class="text-black-50 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti pariatur illo nesciunt beatae expedita, alias minus impedit! Officiis nulla asperiores maiores ullam.</p>
-            <h5 class="fw-bold mb-4">Join the best food of week</h5>
-            <div class="d-flex">
-              <a href="#" class="btn btn-lg btn-primary me-3 cart-btn"><i class="bi bi-cart cart-icon"></i></a>
-              <a href="#" class="btn btn-lg btn-outline-primary">
-                <i class="bi bi-list-ul"></i>
-                View Menu</a>
+            <div class="">
+              <h1 class="text-primary display-4 fw-bold mb-4 to-down">
+                Tasty <span class="element"></span>
+              </h1>
+              <p class="text-black-50 mb-4 to-down">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti pariatur illo nesciunt beatae expedita, alias minus impedit! Officiis nulla asperiores maiores ullam.</p>
+              <h5 class="fw-bold mb-4 to-down">Join the best food of week</h5>
+              <div class="d-flex  to-down">
+                <a href="#" class="btn btn-lg btn-primary me-3 cart-btn"><i class="bi bi-cart cart-icon"></i></a>
+                <a href="#" class="btn btn-lg btn-outline-primary">
+                  <i class="bi bi-list-ul"></i>
+                  View Menu</a>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-5">
-            <img src="./public/img/home.png" class="w-100" alt="">
+            <!-- <img src="./public/img/home.png" class="w-100 animate__animated animate__fadeInDown animate__delay-1s" alt=""> -->
+            <img src="./public/img/home.png" class="w-100 to-down" alt="">
           </div>
         </div>
       </div>
     </section>
     <!-- End Hero -->
   </header>
+
+  <!-- Start About -->
+  <section id="about" class="bg-light">
+    <div class="container">
+      <div class="row min-vh-100 justify-content-evenly align-items-center">
+        <div class="col-12 col-md-5 col-lg-4">
+          <img src="./public/img/about.jpg" class="w-100 shadow to-right" alt="">
+        </div>
+        <div class="col-12 col-md-5 col-lg-4">
+          <div>
+            <p class="text-primary fw-bold to-left"> About</p>
+            <h4 class="fw-bold mt-4 to-left">We cook the best tasty food</h4>
+            <p class="text-black-50 mb-4 to-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi repudiandae doloremque suscipit distinctio atque.</p>
+            <a href="#" class="btn btn-primary to-left">Explorer History</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End About -->
   
   <script src="main.js" type="module"></script>
 </body>
