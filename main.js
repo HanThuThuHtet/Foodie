@@ -1,6 +1,7 @@
 import './style.scss';
 import Typed from 'typed.js';
 import ScrollReveal from 'scrollreveal';
+import "./node_modules/waypoints/lib/noframework.waypoints.js";
 
 //typed js
 var options = {
@@ -38,3 +39,57 @@ var toLeft = {
 };
 ScrollReveal().reveal('.to-left', toLeft);
 
+
+//Waypoints
+
+// new Waypoint({
+//   element: document.getElementById('home-id'),
+//   handler: function(direction) {
+//     let oldNavLink = document.querySelector(".nav-link .active");
+//     if(oldNavLink != null){
+//      oldNavLink.classList.remove("active");
+//     }
+//     let currentNavLink = document.querySelector(`[href='#home']`);
+//     currentNavLink.classList.add('active');
+//   },
+//   offset: "10%" 
+// })
+
+// new Waypoint({
+//   element: document.getElementById('about'),
+//   handler: function(direction) {
+//     let oldNavLink = document.querySelector(".nav-link .active");
+//     oldNavLink.classList.remove("active");
+//     let currentNavLink = document.querySelector(`[href='#about']`);
+//     currentNavLink.classList.add('active');
+//   },
+//   offset: "25%" 
+// })
+
+new Waypoint({
+  element: document.getElementById('home-id'),
+  handler: function(direction) {
+      let oldNavLink = document.querySelector(".nav-link.active");
+      if(oldNavLink != null){
+          oldNavLink.classList.remove("active");
+      }
+      let currentNavLink = document.querySelector(`[href="#home"]`);
+      currentNavLink.classList.add('active');
+  },
+  offset: "10%"
+});
+
+
+let sections = ['about','services','menus'];
+sections.forEach(function (section){
+  new Waypoint({
+      element: document.getElementById(section),
+      handler: function(direction) {
+          let oldNavLink = document.querySelector(".nav-link.active");
+          oldNavLink.classList.remove("active");
+          let currentNavLink = document.querySelector(`[href="#${section}"]`);
+          currentNavLink.classList.add('active');
+      },
+      offset: "50%"
+  })
+})
