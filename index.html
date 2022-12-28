@@ -4,13 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Foodie</title>
+  <link rel="icon" href="./public/img/icon.png">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://metatags.io/">
+  <meta property="og:title" content="Foodie-Project">
+  <meta property="og:description" content="Landing Page for Foodie Project">
+  <meta property="og:image" content="./public/img/about.jpg">
 </head>
 <body>
   <header>
     <!-- Start Nav  -->
     <div class="">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pt-3  site-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top pt-2  site-navbar">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="./public/img/icon.png" class="brand-icon" alt="">
@@ -29,13 +36,13 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#menus">Menus</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           
@@ -44,6 +51,7 @@
       </nav>
     </div>
     <!-- End Nav -->
+    <div class="py-5 py-md-0"></div>
     <!-- Start Hero -->
     <section id="home">
       <div class="container">
@@ -96,15 +104,15 @@
   <!-- Start Services -->
   <section id="services" class="bg-light">
     <div class="container">
-      <div class="row min-vh-100 justify-content-center align-items-center align-content-center">
-        <div class="col-12 mb-5 pb-5">
+      <div class="row min-vh-100 justify-content-evenly align-items-center align-content-center">
+        <div class="col-12 mb-5 pb-3">
           <div class="text-center">
-            <p class="text-primary fw-bold to-left">Services</p>
-            <h4 class="fw-bold mt-4 to-left">Our Amazing Services</h4>
+            <p class="text-primary fw-bold to-down">Services</p>
+            <h4 class="fw-bold mt-4 to-down">Our Amazing Services</h4>
           </div>
         </div>
         <div class="col-10 col-md-4 col-lg-3">
-          <div class="service">
+          <div class="service to-down mb-5 mb-md-0">
             <svg  class="services-svg" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
               <path d="M45.3205 21.5702L44.6357 19.3163C43.7659 16.756 40.9852 15.3857 38.4249
 16.2556C36.9847 16.7449 35.8536 17.876 35.3643 19.3163L34.6795 21.5702C34.1032
@@ -171,7 +179,7 @@
           </div>
         </div>
         <div class="col-10 col-md-4 col-lg-3">
-          <div class="service">
+          <div class="service to-down mb-5 mb-md-0">
             <svg  class="services-svg" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
               <path d="M45.3205 21.5702L44.6357 19.3163C43.7659 16.756 40.9852 15.3857 38.4249
 16.2556C36.9847 16.7449 35.8536 17.876 35.3643 19.3163L34.6795 21.5702C34.1032
@@ -238,7 +246,7 @@
           </div>
         </div>
         <div class="col-10 col-md-4 col-lg-3">
-          <div class="service">
+          <div class="service to-down mb-5 mb-md-0">
             <svg  class="services-svg" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
               <path d="M45.3205 21.5702L44.6357 19.3163C43.7659 16.756 40.9852 15.3857 38.4249
 16.2556C36.9847 16.7449 35.8536 17.876 35.3643 19.3163L34.6795 21.5702C34.1032
@@ -308,6 +316,153 @@
     </div>
   </section>
   <!-- End Services -->
+
+  <!-- Start Menus -->
+  <section id="menus">
+    <div class="container py-5">
+      <div class="row min-vh-100 justify-content-center align-items-center align-content-center" id="menuRow">
+        <div class="col-12 mb-5 pb-1">
+          <div class="text-center">
+            <p class="text-primary fw-bold to-down">Special</p>
+            <h4 class="fw-bold mt-4 to-down">Menu Of The Week</h4>
+          </div>
+        </div>
+
+        <!-- control by js -->
+        <!-- <div class="col-8 col-md-4 col-lg-3">
+          <div class="card plate-card to-up">
+            <img src="./public/img/plate1.png" class="w-55 mx-auto d-block my-4" alt="">
+            <div class="card-body">
+              <p class="fw-bold mb-1">Barbecue Salad</p>
+              <p class="text-black-50 small">Special Delicious Dish</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0">$ 22.2</p>
+                <button class="btn btn-primary">
+                  <i class="bi bi-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+      </div>
+    </div>
+
+    <!-- Start Application -->
+    <div class="container">
+      <div class="row min-vh-100 justify-content-evenly align-items-center">
+        <div class="col-12 col-md-5 col-lg-4">
+          <img src="./public/img/movil-app.png" class="w-100 to-right" alt="">
+        </div>
+        <div class="col-12 col-md-5 col-lg-4">
+          <div>
+            <p class="text-primary fw-bold to-left">Application</p>
+            <h4 class="fw-bold mt-4 to-left">App is available</h4>
+            <p class="text-black-50 mb-4 to-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus animi repudiandae doloremque suscipit distinctio atque.</p>
+            <div class="d-inline">
+              <a href="#" class="text-decoration-none to-left">
+                <img src="./public/img/app1.png" class="w-25" alt="">
+              </a>
+              <a href="#" class="text-decoration-none to-left">
+                <img src="./public/img/app2.png" class="w-25"  alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Application -->
+  </section>
+  <!-- End Menus -->
+
+  <!-- Start Contact -->
+  <section id="contact" class="bg-light py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-5">
+            <div class="content">
+                <p class="text-primary mb-0">Let's talk</p>
+                <h4 class="fw-bold">Contact Us</h4>
+                <p class="mb-0 text-black-50">
+                    Expedita Inventore Magni Modi Molestiae Mollitia Non Odit Provident, Similique Suscipit, Tempora Temporibus Voluptatum. Temporibus Voluptatum.
+                </p>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-lg-2 align-self-end">
+            <div class="content" data-sr-id="15" >
+                <a href="#" class="btn btn-primary">Contact Us Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-9">
+            <hr class="mb-5 mt-0">
+        </div>
+    </div>
+    <div class="row justify-content-center">
+
+        <div class="col-lg-2">
+            <div class="content" >
+                <h4 class="fw-bold mb-3">Tasty Food</h4>
+
+                <a href="#" class="text-decoration-none social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="#" class="text-decoration-none social-link">
+                    <i class="fa-brands fa-google"></i>
+                </a>
+                <a href="#" class="text-decoration-none social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <p class="small text-black-50 mb-1">Social Links</p>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="content mb-5 mb-md-0" >
+                        <p class="fw-bold">Services</p>
+                        <div class="d-flex flex-column">
+                            <a href="#" class="text-black-50 text-decoration-none">Delivery</a>
+                            <a href="#" class="text-black-50 text-decoration-none">Pricing</a>
+                            <a href="#" class="text-black-50 text-decoration-none">Fast Food</a>
+                            <a href="#" class="text-black-50 text-decoration-none">Reserve your spot</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="content mb-5 mb-md-0" >
+                        <p class="fw-bold">Pages</p>
+                        <div class="d-flex flex-column">
+                            <a href="#" class="text-black-50 text-decoration-none">Event</a>
+                            <a href="#" class="text-black-50 text-decoration-none">Contact Us</a>
+                            <a href="#" class="text-black-50 text-decoration-none">Privacy Policy</a>
+                            <a href="#" class="text-black-50 text-decoration-none">Terms of services</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="content mb-5 mb-md-0">
+                        <p class="fw-bold">Information</p>
+                        <div class="d-flex flex-column">
+                            <a href="#" class="text-black-50 text-decoration-none">Ygn, Tamwe</a>
+                            <a href="#" class="text-black-50 text-decoration-none">No 7/9, Zay Street</a>
+                            <a href="#" class="text-black-50 text-decoration-none">09250152018</a>
+                            <a href="#" class="text-black-50 text-decoration-none">cto@mmt-it.com</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Contact -->
+
+  
   
   <script src="main.js" type="module"></script>
 </body>

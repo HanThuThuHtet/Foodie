@@ -23,6 +23,14 @@ var options = {
 };
 ScrollReveal().reveal('.to-down', toDown);
 
+var toUp = {
+  distance: '70px',
+  origin: 'bottom',
+  interval: 500,
+  duration: 1000
+};
+ScrollReveal().reveal('.to-up', toUp);
+
 var toRight = {
     distance: '50px',
     origin: 'left',
@@ -80,7 +88,7 @@ new Waypoint({
 });
 
 
-let sections = ['about','services','menus'];
+let sections = ['about','services','menus','contact'];
 sections.forEach(function (section){
   new Waypoint({
       element: document.getElementById(section),
@@ -92,4 +100,56 @@ sections.forEach(function (section){
       },
       offset: "50%"
   })
+})
+
+
+
+//Menus
+let menuLists = [
+  {
+    id:1,
+    img : "./public/img/plate1.png",
+    title: "Barbecue Salad",
+    description: "Special Delicious Dish",
+    price: 22.2,
+    currency: "$"
+  },
+  {
+    id:2,
+    img : "./public/img/plate2.png",
+    title: "Salad with fish",
+    description: "Special Delicious Dish",
+    price: 30.5,
+    currency: "$"
+  },
+  {
+    id:3,
+    img : "./public/img/plate3.png",
+    title: "Spinach Salad",
+    description: "Special Delicious Dish",
+    price: 45.2,
+    currency: "$"
+  }
+];
+
+let menuRow = document.getElementById("menuRow");
+menuLists.forEach(function(menuList){
+  let div = document.createElement("div");
+  div.classList.add("col-8", "col-md-4", "col-lg-3");
+  div.innerHTML = `
+  <div class="card plate-card to-up mb-5">
+  <img src="${menuList.img}" class="w-55 mx-auto d-block my-4" alt="">
+  <div class="card-body">
+    <p class="fw-bold mb-1">${menuList.title}</p>
+    <p class="text-black-50 small">${menuList.description}</p>
+    <div class="d-flex justify-content-between align-items-center">
+      <p class="mb-0">${menuList.currency} ${menuList.price}</p>
+      <button class="btn btn-primary">
+        <i class="bi bi-cart-plus"></i>
+      </button>
+    </div>
+  </div>
+</div>
+  `;
+  menuRow.append(div)
 })
